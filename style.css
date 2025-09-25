@@ -1,0 +1,291 @@
+.nav_bar{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    position: sticky;
+    top: 0%;
+    background-color: rgb(0, 0, 0);
+}
+
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+*{
+font-family: "Open Sans", sans-serif;
+font-optical-sizing: auto;
+}
+
+/* div{
+    border:1px solid black;
+} */
+a{
+    margin-right: 10px;
+    color: white;
+}
+
+.cname{
+    font-size: x-large;
+    color: white;
+}
+*{
+    color: white;
+}
+
+
+.home{
+    background-image: url("https://i.pinimg.com/736x/2a/47/6c/2a476c4b01272edc4518abfad266bdd4.jpg");
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    background-position-y:top 10px;
+    background-size: cover;
+}
+
+.welcome_text{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: xx-large;
+    color: black;
+}
+.welcome_text h2{
+    margin-top: 25%;
+}
+.Places{
+    height: auto;
+    width: 100%;
+}
+.parentplaces{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 1;
+    width: 100%;
+    height: auto;
+}
+
+.placescard{
+    height: 400px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.pcard1{
+    background-image: url("https://i.pinimg.com/736x/b3/5d/70/b35d707e2486e9d20a4b26d37aa6b4ed.jpg");
+    display: flex;
+    /* justify-content: end; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pcard2{
+    background-image: url("https://i.pinimg.com/1200x/63/1f/06/631f066a022d07d2bcdabe355828c57a.jpg");
+    display: flex;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .pcard3{
+    background-image: url("https://i.pinimg.com/1200x/fa/57/1f/fa571f0a4a4bb929ade67a49f122bd54.jpg");
+}
+
+.pcard4{
+    background-image: url("https://i.pinimg.com/1200x/fa/57/1f/fa571f0a4a4bb929ade67a49f122bd54.jpg");
+    display: flex;
+    justify-content: end;
+} */
+
+.textarplaces{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.334);
+    display: flex;
+    align-items: end;
+}
+
+.placescard:hover .textarplaces{
+    background-color: rgba(0, 0, 0, 0.696);
+}
+
+
+.pcard1:hover .infoplaces::after{
+    content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet aspernatur odio nisi maxime animi, fuga ipsum, nulla cupiditate veniam excepturi quibusdam temporibus quasi velit hic natus tempora pariatur voluptatem possimus.";
+}
+
+.pcard2:hover .infoplaces::after{
+    content: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet aspernatur odio nisi maxime animi, fuga ipsum, nulla cupiditate veniam excepturi quibusdam temporibus quasi velit hic natus tempora pariatur voluptatem possimus.";
+}
+
+.placesheading{
+    color: white;
+    height: auto;
+}
+
+.experience_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.expcard{
+    height: 400px;
+    width: 30%;
+    margin: 30px;
+    background-image: url("https://i.pinimg.com/1200x/16/28/50/162850c0ce40a53c486e9091c71426da.jpg");
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+
+.expcard:hover .exp{
+   font-size: xx-large;
+}
+
+.exp{
+    font-size: x-large;
+}
+
+.expinfo{
+    position:relative;
+}
+
+.plan_container{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.plancard{
+    width: 30%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/736x/a9/03/d1/a903d153d44ac91e7a1f97d6a0a0254f.jpg");
+
+}
+
+.gallary_container{
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: "a a b b c c "
+    "a a b b c c"
+    "a a b b c c"
+    "e e b b d d"
+    "e e b b d d"
+    "e e b b d d";
+}
+
+.review_card{
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+
+}
+.review_container{
+    display: flex;
+    justify-content: space-around;
+}
+.cover{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.cover:hover{
+    background-color: rgba(0, 0, 0, 0.503);
+
+}
+
+
+
+.img_container1{
+    grid-area: a;
+    background-image: url("https://i.pinimg.com/1200x/a2/45/13/a245133998244908efecadf2798e5e5f.jpg");
+    object-fit: cover;
+}
+.img_container2{
+    grid-area: b;
+    background-image: url("https://i.pinimg.com/1200x/14/eb/fc/14ebfc7a8513757e9665a02b399baceb.jpg");
+    object-fit: cover;
+
+}
+.img_container3{
+    grid-area: c;
+    background-image: url("https://i.pinimg.com/1200x/7d/d8/cf/7dd8cfd213bdc8808342ff1d39e539d5.jpg");
+    object-fit: cover;
+
+}
+.img_container4{
+    grid-area: d;
+    background-image: url("https://i.pinimg.com/736x/04/43/25/0443250409d07a4ddffe0ae0dfb3abd3.jpg");
+    object-fit: cover;
+
+}
+.img_container5{
+    grid-area: e;
+    background-image: url("https://i.pinimg.com/736x/43/23/1f/43231fce747cf60db049c91bd3432898.jpg");
+    object-fit:cover;
+    
+}
+
+
+.img_card{
+    margin: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer{
+    height: 100px;
+    background-color: black;
+}
+
+.expcard1{
+    background-image: url("https://i.pinimg.com/736x/05/02/4e/05024e17ec73b97957698d8774101fcd.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.expcard2{
+    background-image: url("https://i.pinimg.com/736x/f5/db/d0/f5dbd00b92ddc07b8617f9e4f613541c.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.expcard3{
+    background-image: url("https://i.pinimg.com/736x/72/62/b5/7262b55d419ddb63f5f4621f5922700a.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.expcard4{
+    background-image: url("https://i.pinimg.com/736x/51/40/a7/5140a7f8f09947008456bb119668ac33.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.plan2{
+    background-image: url("https://i.pinimg.com/736x/bd/49/5c/bd495cc3857097b4405b30039b70e32a.jpg");
+
+}
+
+.plan3{
+    background-image: url("https://i.pinimg.com/1200x/bb/83/4a/bb834acc7ee7378e0f330701f7f4c987.jpg");
+    object-fit:cover;
+}
